@@ -1,5 +1,5 @@
 from django.shortcuts import render
 import datetime
 
-def Hino(request):
+def PagEdital(request):
     return render(request, 'inscricao/edital.html')
