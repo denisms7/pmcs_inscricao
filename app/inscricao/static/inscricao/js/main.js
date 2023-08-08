@@ -247,20 +247,6 @@ function atualizarBotaoContato(inputId, botaoId) {
 }
 
 
-document.getElementById("id_fone_1_tipo").addEventListener("input", function () {
-    atualizarBotaoContato("id_fone_1", "btn_id_fone_1");
-});
-
-document.getElementById("id_fone_2_tipo").addEventListener("input", function () {
-    atualizarBotaoContato("id_fone_2", "btn_id_fone_2");
-});
-
-document.getElementById("id_fone_3_tipo").addEventListener("input", function () {
-    atualizarBotaoContato("id_fone_3", "btn_id_fone_3");
-});
-
-
-
 // FORMATAR TELEFONE
 function formatarTelefone(event, inputId) {
     var valor = document.getElementById(inputId).value;
