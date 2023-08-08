@@ -3,10 +3,10 @@ from django.utils.translation import gettext_lazy as _
 
 class Incricao(models.Model):
     MODALIDADE_CHOICES = [
-        ('1', _('Solo')),
-        ('2', _('Dupla')),
-        ('3', _('Grupo')),
-        ('4', _('Outros')),
+        (1, _('Solo')),
+        (2, _('Dupla')),
+        (3, _('Grupo')),
+        (4, _('Outros')),
     ]
 
     CONTATOS_CHOICES = [

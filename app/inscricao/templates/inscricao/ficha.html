@@ -9,7 +9,13 @@ Inscrição
 
 {% block pagina %}
 
+
+
 <div class="container">
+    <form method="post">
+        {% csrf_token %}
+        
+
     <div class="col-12 mt-3">
         <h3>Dados Artísticos</h3>
         <hr>
@@ -172,6 +178,7 @@ Inscrição
     </button>
 </section>
 
+</form>
 
 </div>
 

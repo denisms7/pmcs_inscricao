@@ -17,10 +17,9 @@ class PagInscreva(CreateView):
     model = Incricao
     form_class = FormIncricao
     template_name = 'inscricao/ficha.html'
-    success_url = reverse_lazy('pessoa-busca')
+    success_url = reverse_lazy('pag_concluida')
 
     def form_valid(self, form):
         url = super().form_valid(form)
-
-        messages.success(self.request, "Registro salvo com sucesso.")
+        messages.success(self.request, "Inscrição concluida com sucesso.")
         return url
