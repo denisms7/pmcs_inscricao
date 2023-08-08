@@ -7,6 +7,8 @@ class FormIncricao(forms.ModelForm):
         model = Incricao
         fields = [
             'modalidade',
+            'nome_artistico',
+
             'email_1',
             'email_2',
             'fone_1',

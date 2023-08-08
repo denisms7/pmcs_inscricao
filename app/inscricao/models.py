@@ -17,6 +17,7 @@ class Incricao(models.Model):
 
     data = models.DateTimeField(auto_now_add=True, verbose_name=_('Data'))
     modalidade = models.PositiveSmallIntegerField(choices=MODALIDADE_CHOICES, verbose_name=_('Modalidade'))
+    nome_artistico = models.CharField(max_length=255, verbose_name=_('Nome Artístico'))
 
     # E-mail
     email_1 = models.EmailField(max_length=150, verbose_name=_('E-mail 01'))

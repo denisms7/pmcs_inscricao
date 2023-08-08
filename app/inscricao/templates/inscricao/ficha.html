@@ -10,7 +10,27 @@ Inscrição
 {% block pagina %}
 
 <div class="container">
+    <div class="col-12 mt-3">
+        <h3>Dados Artísticos</h3>
+        <hr>
+    </div>
+    <section class="row">
+        <div class="col-sm-12 col-md-3 mb-3">
+            <label for="{{ form.modalidade.id_for_label }}" class="form-label">{{ form.modalidade.label }}: {% if form.modalidade.field.required %}<span class="text-danger">*</span>{% endif %}</label>
+            {% render_field form.modalidade class="form-select" %}
+            {% for error in form.modalidade.errors %}
+                <span class="text-danger">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div class="col-sm-12 col-md-9 mb-3">
+            <label for="{{ form.nome_artistico.id_for_label }}" class="form-label">{{ form.nome_artistico.label }}: {% if form.nome_artistico.field.required %}<span class="text-danger">*</span>{% endif %}</label>
+            {% render_field form.nome_artistico class="form-control" %}
+            {% for error in form.nome_artistico.errors %}
+                <span class="text-danger">{{ error }}</span>
+            {% endfor %}
+        </div>
 
+    </section>
 
 
 <section class="row Verifica_Contato">
@@ -142,6 +162,20 @@ Inscrição
             <span class="text-danger">{{ error }}</span>
         {% endfor %}
     </div>
+</section>
+
+
+<!-- ===== BOTOES ===== -->
+<section class="container g-0 mt-2">
+    <button type="submit" class="btn btn-success my-1 me-1">
+        <i class="bi bi-check-lg me-1"></i>Salvar
+    </button>
+    <button type="reset" class="btn btn-warning my-1 me-1">
+        <i class="bi bi-x me-1"></i>Limpar
+    </button>
+    <button type="button" onclick="window.history.go(-1)" class="btn btn-primary my-1">
+        <i class="bi bi-arrow-return-left me-1"></i>Voltar
+    </button>
 </section>
 
 

@@ -7,7 +7,7 @@ from .models import Incricao
 from .form import FormIncricao
 
 def PagEdital(request):
-    return render(request, 'inscricao/edital.html')
+    return render(request, 'inscricao/inicio.html')
 
 def PagConcluida(request):
     return render(request, 'inscricao/ficha_concluida.html')

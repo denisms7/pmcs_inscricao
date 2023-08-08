@@ -1,0 +1,41 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.corPrimaria {
+    background-color: #007A37;
+    color: #fff;
+}
+
+.corPrimaria__texto {
+    background-color: #007A37;
+    color: #fff;
+}
+
+.corPrimaria__borda {
+    border: 2px #007A37 solid;
+}
+
+.btnPrimaria {
+    background-color: #007A37;
+    color: #fff;
+}
+
+.btnPrimaria:hover {
+    background-color: #007A37;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    color:  #007A37;
+}
+
+#brasao_logo {
+    max-height: 2em;
+    height: 100%;
+    
+}
