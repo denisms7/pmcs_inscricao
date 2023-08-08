@@ -1,3 +1,5 @@
 from django.shortcuts import render
+import datetime
 
-# Create your views here.
+def Hino(request):
+    return render(request, 'inscricao/edital.html')
