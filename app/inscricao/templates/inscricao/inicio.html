@@ -4,38 +4,171 @@
 {% load widget_tweaks %}
 
 {% block titulo %}
-Edital
+Início
 {% endblock %}
 
 {% block pagina %}
-<div class="container">
 
-        <div class="col-12 mt-3">
-            <h2>Show de Talentos</h2>
-            <hr>
+<!-- Header-->
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h1 class="masthead-heading mb-0">Centenário do Sul</h1>
+            <h2 class="masthead-subheading mb-0">Show de Talentos Abascuara</h2>
+            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Veja Mais</a>
         </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
 
-        <h4>Introdução:</h4>
-        <p>Dando continuidade à tradição de celebrar a arte e a criatividade musical, temos o prazer de anunciar o evento anual que reúne os talentos musicais mais brilhantes de nossa comunidade. O "Show de Talentos Abascuara" é uma plataforma emocionante que visa proporcionar aos músicos locais uma oportunidade única de se apresentarem, compartilharem suas paixões musicais e conquistarem corações com suas habilidades excepcionais.</p>
-    
-        <h4>Data e Local:</h4>
-        <p>O evento ocorrerá no dia [data], a partir das [horário de início], no coreto da Praça Padre Aurelio Basso. A atmosfera acolhedora do local criará o cenário perfeito para uma noite repleta de música extraordinária.</p>
-    
-        <h4>Formato do Evento:</h4>
-        <p>O "Show de Talentos Abascuara" apresentará uma variedade de estilos musicais. O evento será dividido em várias categorias, incluindo solos, duetos e grupos, garantindo que cada artista tenha a oportunidade de brilhar.</p>
-    
-        <h4>Inscrições e Seleção:</h4>
-        <p>As inscrições serão abertas a partir de [data de início das inscrições] e se encerrarão em [data de encerramento das inscrições]. O número de inscrições será limitado a 50 artistas/grupos. Músicos de todas as idades e níveis de experiência são incentivados a participar. Um painel de jurados especializados, composto por músicos renomados e profissionais da indústria, avaliará as inscrições e selecionará os artistas que subirão ao palco.</p>
-    
-        <h4>Prêmios:</h4>
-        <p>Além da oportunidade de se apresentar diante de uma plateia apaixonada, os participantes terão a chance de competir por prêmios emocionantes, incluindo gravações de estúdio, bolsas de estudo musicais, instrumentos musicais de alta qualidade e oportunidades de atuação em eventos futuros. O prêmio principal, no entanto, será a visibilidade e o reconhecimento dentro da comunidade musical.</p>
-    
-        <h4>Ingressos e Público:</h4>
-        <p>Os ingressos serão gratuitos, para garantir que todos possam desfrutar do espetáculo, visando atrair um público diversificado de entusiastas da música.</p>
-    
-        <h4>Conclusão:</h4>
-        <p>O "Show de Talentos Abascuara" promete ser uma celebração inesquecível da música e do talento dentro de nossa comunidade. Convidamos todos a se juntarem a nós para uma noite de inspiração musical, performances emocionantes e a descoberta de novos e promissores talentos musicais. Mal podemos esperar para testemunhar o brilho dos artistas em nosso palco e compartilhar essa experiência musical extraordinária.</p>
+<!-- Content section 0-->
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'img/governo.png' %}" alt="..." />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Introdução</h2>
+                    <p>Dando continuidade à tradição de celebrar a arte e a criatividade musical, temos o prazer de
+                        anunciar o evento anual que reúne os talentos musicais mais brilhantes de nossa comunidade. O
+                        "Show de Talentos Abascuara" é uma plataforma emocionante que visa proporcionar aos músicos
+                        locais uma oportunidade única de se apresentarem, compartilharem suas paixões musicais e
+                        conquistarem corações com suas habilidades excepcionais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-</div>
+<!-- Content section 1-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'img/praca.jpg' %}" alt="..." />
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Data e Local</h2>
+                    <p>O evento ocorrerá no dia [data], a partir das [horário de início], no coreto da Praça Padre
+                        Aurelio Basso. A atmosfera acolhedora do local criará o cenário perfeito para uma noite repleta
+                        de música extraordinária.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'img/guitarra.jpg' %}"
+                        alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Formato do Evento</h2>
+                    <p>O "Show de Talentos Abascuara" apresentará uma variedade de estilos musicais. O evento será
+                        dividido em várias categorias, incluindo solos, duetos e grupos, garantindo que cada artista
+                        tenha a oportunidade de brilhar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'img/inscricao.png' %}"
+                        alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Inscrições e Seleção</h2>
+                    <p>As inscrições serão abertas a partir de [data de início das inscrições] e se encerrarão em [data
+                        de encerramento das inscrições]. O número de inscrições será limitado a 50 artistas/grupos.
+                        Músicos de todas as idades e níveis de experiência são incentivados a participar. Um painel de
+                        jurados especializados, composto por músicos renomados e profissionais da indústria, avaliará as
+                        inscrições e selecionará os artistas que subirão ao palco.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content section 4-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'img/premios.jpg' %}" alt="..." />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Prêmios</h2>
+                    <p>Além da oportunidade de se apresentar diante de uma plateia apaixonada, os participantes terão a
+                        chance de competir por prêmios emocionantes, incluindo gravações de estúdio, bolsas de estudo
+                        musicais, instrumentos musicais de alta qualidade e oportunidades de atuação em eventos futuros.
+                        O prêmio principal, no entanto, será a visibilidade e o reconhecimento dentro da comunidade
+                        musical.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content section 5-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'img/plateia.jpg' %}" alt="..." />
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Ingressos e Público</h2>
+                    <p>Os ingressos serão gratuitos, para garantir que todos possam desfrutar do espetáculo, visando
+                        atrair um público diversificado de entusiastas da música.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content section 4-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'img/musica.jpg' %}" alt="..." />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Conclusão</h2>
+                    <p>O "Show de Talentos Abascuara" promete ser uma celebração inesquecível da música e do talento
+                        dentro de nossa comunidade. Convidamos todos a se juntarem a nós para uma noite de inspiração
+                        musical, performances emocionantes e a descoberta de novos e promissores talentos musicais. Mal
+                        podemos esperar para testemunhar o brilho dos artistas em nosso palco e compartilhar essa
+                        experiência musical extraordinária.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 {% endblock %}
