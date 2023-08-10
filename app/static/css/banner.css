@@ -1,0 +1,56 @@
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg_cabecalho {
+    max-height: 90vh;
+    height: 100%;
+    background: linear-gradient(-45deg, #007A37, #348930, #61A520, #9DCA0A);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+}
+
+
+
+@media (max-width: 1920px) {
+    .bg_cabecalho h1 {
+        font-size: 5em;
+        font-weight: 900;
+    }
+
+    .bg_cabecalho h2 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 400px) {
+    .bg_cabecalho h1 {
+        font-size: 3em;
+        font-weight: 600;
+    }
+
+    .bg_cabecalho h2 {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+}
+
+
+.bg_cabecalho a {
+    font-size: 1em;
+    color: #007A37;
+    background-color: aliceblue;
+}
+
+.bg_cabecalho a:hover {
+    background-color: rgba(240, 248, 255, 0.603);
+}
