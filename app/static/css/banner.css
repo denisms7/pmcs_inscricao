@@ -19,18 +19,16 @@
 }
 
 
-
-@media (max-width: 1920px) {
-    .bg_cabecalho h1 {
-        font-size: 5em;
-        font-weight: 900;
-    }
-
-    .bg_cabecalho h2 {
-        font-size: 2.5em;
-        font-weight: 600;
-    }
+.bg_cabecalho h1 {
+    font-size: 5em;
+    font-weight: 900;
 }
+
+.bg_cabecalho h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
 
 @media (max-width: 400px) {
     .bg_cabecalho h1 {
@@ -53,4 +51,5 @@
 
 .bg_cabecalho a:hover {
     background-color: rgba(240, 248, 255, 0.603);
+    transition: 0.4s;
 }
