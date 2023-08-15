@@ -16,7 +16,7 @@
 .bg_cabecalho {
     max-height: 90vh;
     height: 100%;
-    background: linear-gradient(-45deg, #007A37, #348930, #61A520, #9DCA0A);
+    background: linear-gradient(-45deg,  #348930, #61A520, #9DCA0A, #da251d);
     background-size: 400% 400%;
     animation: Gradient 10s ease infinite;
 }
@@ -51,8 +51,7 @@ header.masthead .bg-circle {
     z-index: 0;
     position: absolute;
     border-radius: 100%;
-    background: linear-gradient(-45deg, #007a37dc, #348930d3, #60a520d5);
-    animation: Gradient 10s ease infinite;
+    background: linear-gradient(-45deg, #007a3794, #3489309a, #60a52080);
 }
 
 header.masthead .bg-circle-1 {
