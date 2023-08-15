@@ -2,13 +2,16 @@
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
+
 
 .bg_cabecalho {
     max-height: 90vh;
@@ -19,37 +22,102 @@
 }
 
 
-.bg_cabecalho h1 {
+header.masthead {
+    position: relative;
+    overflow: hidden;
+
+    padding-top: calc(7rem + 72px);
+    padding-bottom: 7rem;
+
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+header.masthead .masthead-content {
+    z-index: 1;
+    position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+    font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+    font-size: 2rem;
+}
+
+header.masthead .bg-circle {
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(-45deg, #007a37dc, #348930d3, #60a520d5);
+    animation: Gradient 10s ease infinite;
+}
+
+header.masthead .bg-circle-1 {
+    height: 90rem;
+    width: 90rem;
+    bottom: -55rem;
+    left: -55rem;
+}
+
+header.masthead .bg-circle-2 {
+    height: 50rem;
+    width: 50rem;
+    top: -25rem;
+    right: -25rem;
+}
+
+header.masthead .bg-circle-3 {
+    height: 20rem;
+    width: 20rem;
+    bottom: -10rem;
+    right: 5%;
+}
+
+header.masthead .bg-circle-4 {
+    height: 30rem;
+    width: 30rem;
+    top: -5rem;
+    right: 35%;
+}
+
+
+header.masthead a {
+    font-size: 1em;
+    color: #007A37;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+header.masthead a:hover {
+    background-color: rgba(240, 248, 255, 0.603);
+    transition: 0.4s;
+}
+
+.masthead-content h1 {
     font-size: 5em;
     font-weight: 900;
 }
 
-.bg_cabecalho h2 {
+.masthead-content h2 {
     font-size: 2.5em;
     font-weight: 600;
 }
 
 
-@media (max-width: 400px) {
-    .bg_cabecalho h1 {
-        font-size: 3em;
-        font-weight: 600;
+@media (min-width: 992px) {
+    header.masthead {
+        padding-top: calc(10rem + 55px);
+        padding-bottom: 10rem;
     }
 
-    .bg_cabecalho h2 {
-        font-size: 1.5em;
-        font-weight: 400;
+    header.masthead .masthead-content .masthead-heading {
+        font-size: 6rem;
     }
-}
 
-
-.bg_cabecalho a {
-    font-size: 1em;
-    color: #007A37;
-    background-color: aliceblue;
-}
-
-.bg_cabecalho a:hover {
-    background-color: rgba(240, 248, 255, 0.603);
-    transition: 0.4s;
+    header.masthead .masthead-content .masthead-subheading {
+        font-size: 4rem;
+    }
 }
