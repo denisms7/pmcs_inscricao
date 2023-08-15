@@ -88,7 +88,11 @@ header.masthead a {
     font-size: 1em;
     color: #007A37;
     background-color: aliceblue;
-    padding: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 header.masthead a:hover {
