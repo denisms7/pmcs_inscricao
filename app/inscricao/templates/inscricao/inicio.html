@@ -11,6 +11,9 @@ Início
 
 {% include 'banner.html' %}
 
+
+
+
 <!-- Content section 0-->
 <section id="scroll">
     <div class="container px-5">
@@ -156,6 +159,30 @@ Início
         </div>
     </div>
 </section>
+
+<div class="toast-container position-fixed top-0 end-0 p-3">
+    <div class="toast" id="aviso_sucesso" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+        <strong class="me-auto">Inscrição Concluída</strong>
+        <small></small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Para acompanhar as inscrições realizadas, acesse:
+            <a type="button" href="{% url 'pag_acompanhe' %}" class="btn-sm btn btn-primary">Acompanhar</a>
+        </div>
+    </div>
+</div>
+
+{% if show_toast == True %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toastElement = document.getElementById('aviso_sucesso');
+        toastElement.classList.add('show');
+    });
+</script>
+{% endif %}
+
 
 
 {% endblock %}
